@@ -1,33 +1,126 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="icon" type="favicon-32x32" href="./icon/logo_nobg.png">
     <title>Spooky Developers</title>
+
 </head>
 
 <body>
     <div class="main">
         <div class="nav">
+            <div style="display:flex; flex-direction:row">
+                <img src="./icon/logo_nobg.png" alt="logo" width="40px" height="40px" style="padding-left:5px; padding-right:5px">
+                <span style=" display:flex; flex-direction:row; align-items: center; animation-name: log1; animation-duration:100s;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color:antiquewhite"><span style="font-size: 33px;"> SD</span>
+                </span>
+            </div>
             <ul>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
+                <li onclick="navigate(0)">Home</li>
+                <li onclick="navigate(1)">Store</li>
+                <li onclick="navigate(2)">About Us</li>
+                <li onclick="navigate(3)">LogIn/SignUp</li>
             </ul>
         </div>
 
-        <div class="up">
-            <div class="home">11111</div>
-            <div class="about">sdfsdf</div>
-            <div class="shop"></div>
-            <div class="log"></div>
+        <div id="sd">
+            <div id="sd1">Spooky Developers</div>
+            <div id="sd2">A portal for all your Web Solutions</div>
         </div>
-        <div class="down">3333</div>
-    </div>
+        <div class="up">
 
+            <div class="home">
+                <h1 id="homeh1">Spooky Developers</h1>
+                <br>
+                <p id="homdt">
+                    Working as a community to help achieve the world a website of their choice with the customizations they need. We are a team of three* active developers with great skills to convert your <b>imaginations into reality</b>. We as the team
+                    are eager to build your imagination. Below, you can have a look on our project gallery:
+                    <!-- <div id="gallery"><img class="im" src="./resource/one.gif" alt="Gallery"><img class="im" src="./resource/two.png" alt="Gallery">
+                        <button class="bleft" onclick="div(-1)">&#10094</button>
+                        <button class="bright" onclick="div(+1)">&#10095</button>
+                    </div> -->
+                    <br><br>
+                    <h2>Who we are?</h2>
+                    <br>
+                    <p>
+                        We are currently a team of three enthusiasts who are skilled in the fields. We are here to provide the best solution for your website. We are a constant and experienced developer!
+                    </p>
+                    <br><br>
+                    <h2>What do we offer?</h2>
+                    <br>
+                    <p>We provide numerous solution including Video Editing, Web Solution and many more</p>
+                </p>
+            </div>
+            <div class="shop">
+                <h1>Welcome to the Store!</h1>
+                We have a group of services for you. Have a look below!
+                <div id="shopping-grid">
+                    <div id="1"></div>
+                </div>
+            </div>
+            <div class="about">
+                <section style="width:70%">
+                    <h2>About Us</h2>
+                    <p>
+                        <h3>We are <span>Spooky Developers</span></h3>
+                        <p> We are Spooky Developers ! Our business was created on 15 February 2023 . Our aim is to provide service for as minimal as possible . We at Spooky Devlopers provides services like : Web Designs , ui/ux Designs , Editings for videos
+                            and photos, custom templates and many more . We have a team determined to provide the best service at minimal cost with efficiency! Founded by 3 professionals.
+                        </p>
+                    </p>
+                </section>
+                <section style="width:30%;"><img src="./resource/man.jpeg" alt="man" class="abt" style="margin-left:30px"></section>
+            </div>
+            <div class="log"> log</div>
+        </div>
+        <div class="down">
+            <footer>
+                <section id="two">
+                    <div id="address">
+                        <span onclick="navigate(0)">Spooky Developers</span>
+                        <p>
+                            <img src="./resource/location.png" alt="sdimg" /> India
+                        </p>
+                        <p>
+                            <img src="./resource/inbox.png" alt="sdimg" /><a href="mailto:devs.spooky@gmail.com"> devs.spooky@gmail.com</a>
+                        </p>
+                    </div>
+                    <div id="socials">
+                        <span>follow us</span>
+                        <a href="/">
+                            <p><img src="./resource/fb.png" alt="sdimg" /> Facebook</p>
+                        </a>
+                        <a href="/">
+                            <p><img src="./resource/insta.png" alt="sdimg" /> Instagram</p>
+                        </a>
+                        <a href="/">
+                            <p><img src="./resource/yt.png" alt="sdimg" /> You tube</p>
+                        </a>
+                    </div>
+                    <div id="newsletter">
+                        <span>newsletter</span>
+                        <p>We send you latest offers and news at least once a week.</p>
+                        <p>
+                            <input type="email" placeholder="Email address*" style="width: 75%;" />
+                        </p>
+                        <p>
+                            <input type="submit" value="Subscribe" style="width: 75%;" />
+                        </p>
+                    </div>
+                </section>
+                <br>
+                <section id="three">
+                    <p style="text-align: center">
+                        &copy;Copyright 2023 All Rights Reserved.
+                        <span style="color: green" onclick="navigate(0)">Spooky Developers</span>
+                    </p>
+                </section>
+            </footer>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/main.js"></script>
 </body>
 
 </html>
